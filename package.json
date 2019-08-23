@@ -2,8 +2,8 @@
   "name": "draggable-example",
   "version": "0.1.0",
   "private": true,
-  "description": "A Vue.js project",
-  "author": "desmaisons_david <desmaisons_david@hotmail.com>",
+  "description": "A vue-draggable project example",
+  "author": "Iru Hernández",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve --open",
