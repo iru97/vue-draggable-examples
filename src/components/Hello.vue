@@ -172,13 +172,12 @@ export default {
         (!relatedElement || !relatedElement.fixed) && !draggedElement.fixed
       );
     },
-    handleMouseEnter() {
-      // eslint-disable-next-line no-console
-      console.log("HEY");
-    },
+    // handleMouseEnter() {
+    //   // eslint-disable-next-line no-console
+    //   console.log("HEY");
+    // },
     handleAdd(ev) {
       // eslint-disable-next-line no-debugger
-      debugger;
       alert(`Added element to list ${ev}`);
     }
   },
