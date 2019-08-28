@@ -45,7 +45,7 @@
             <input type="checkbox" v-model="sendData">
           </div>
         </div>
-        <draggable class="list-group" :group="{name: 'one', put: acceptData, pull: sendData}" v-model="list3" :sort="false" @start="isDragging=true" @end="isDragging=false">
+        <draggable class="list-group" :group="{name: 'one', put: acceptData, pull: sendData}" v-model="list3" :sort="false" @start="isDragging=true" @end="isDragging=false" @add="handleAdd($event)">
             <li class="list-group-item" v-for="element in list3" :key="element.order">
               <i :class="element.fixed? 'fa fa-anchor' : 'glyphicon glyphicon-pushpin'" @click=" element.fixed=! element.fixed" aria-hidden="true"></i>
               {{element.name}}
@@ -175,6 +175,11 @@ export default {
     handleMouseEnter() {
       // eslint-disable-next-line no-console
       console.log("HEY");
+    },
+    handleAdd(ev) {
+      // eslint-disable-next-line no-debugger
+      debugger;
+      alert(`Added element to list ${ev}`);
     }
   },
   computed: {
