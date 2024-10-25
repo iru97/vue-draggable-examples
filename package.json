@@ -14,7 +14,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
-    "vue": "^2.5.17",
+    "vue": "^3.0.0",
     "vuedraggable": "^2.19.3"
   },
   "devDependencies": {
